@@ -1,0 +1,25 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div id="mainPanel">
+
+      <form [formGroup]="quickQuoteRef" (ngSubmit)="sendQuotation()">
+        <h4>Quick Quote</h4>
+        <input type="text" placeholder="Moving From" formControlName="movingFrom">
+        <input type="text" placeholder="Moving To" formControlName="movingTo">
+        <input type="date" formControlName="movingDate">
+        <input type="text" placeholder="What would you like to tell us" formControlName="message">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <span id="error">{{msg}}</span>
+    </form>
+  
+    </div>
+  <div id="bottomContainer">
+    <!-- FOOTER -->
+    <div id="footer">
+      <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a> | <a href="#">PRICES</a> | <a href="#">NEWS</a> | <a href="#">SUPPORT</a> | <a href="#">CONTACTS</a><br/>
+        Copyright &copy; Your Company Name. Designed by<a href="http://www.templatesland.com"> TemplatesLand.com</a>.</p>
+    </div>
+  </div>
+  
+  </div>

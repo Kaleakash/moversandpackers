@@ -1,0 +1,32 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div id="mainPanel">
+      <div class="row" style="border: 0px orange solid;height: 550px;">
+          <div class="col-2" style="border: 0px blueviolet solid;">
+            <img src="../../assets//images//admin.png" width="100px"/>
+            <ul>
+              <li><a routerLink="../adminhome">Dashboard</a></li>
+              <li><a routerLink="addService">Add Service</a></li>
+              <li><a routerLink="viewService">View Service</a></li>
+
+              <li><a routerLink="viewAllMessage">View Message</a></li>
+              <li><a routerLink="viewQuote">View Quote</a></li>
+              <li><a routerLink="viewOrder">View Orders</a></li>
+            </ul>
+            
+          </div>
+          <div class="col-10" style="border: 0px greenyellow solid;">
+            <h2>Welcome to Admin Dashboard {{login.email}}</h2>
+            <router-outlet></router-outlet>
+          </div>
+ 
+    </div>
+  <div id="bottomContainer">
+    <!-- FOOTER -->
+    <div id="footer">
+      <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a> | <a href="#">PRICES</a> | <a href="#">NEWS</a> | <a href="#">SUPPORT</a> | <a href="#">CONTACTS</a><br/>
+        Copyright &copy; Your Company Name. Designed by<a href="http://www.templatesland.com"> TemplatesLand.com</a>.</p>
+    </div>
+  </div>
+  
+  </div>

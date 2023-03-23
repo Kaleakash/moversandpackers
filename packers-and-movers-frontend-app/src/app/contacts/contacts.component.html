@@ -1,0 +1,25 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div id="mainPanel">
+
+      <form [formGroup]="msgRef" (ngSubmit)="sendMessage()">
+        <h4>Contact Us</h4>
+        <input type="text" placeholder="Your Name" formControlName="name">
+        <input type="email" placeholder="Your EmailId" formControlName="email">
+        <input type="text" placeholder="Your Phonenumber" formControlName="phonenumber">
+        <input type="text" placeholder="Subject" formControlName="subject">
+        <input type="text" placeholder="What would you like to tell us" formControlName="message">
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+        <span id="error">{{msg}}</span>
+    </form>
+    </div>
+  <div id="bottomContainer">
+    <!-- FOOTER -->
+    <div id="footer">
+      <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a> | <a href="#">PRICES</a> | <a href="#">NEWS</a> | <a href="#">SUPPORT</a> | <a href="#">CONTACTS</a><br/>
+        Copyright &copy; Your Company Name. Designed by<a href="http://www.templatesland.com"> TemplatesLand.com</a>.</p>
+    </div>
+  </div>
+  
+  </div>

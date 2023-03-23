@@ -1,0 +1,28 @@
+/* table {
+    font-size: 18px;
+    table-layout: unset;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1px;
+} */
+
+table{
+    overflow-y:scroll;
+    height:100px;
+    display:block;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    width:"50%"
+ }
+ .imgClass{
+    width: 100px;
+    height: 100px;
+ }
+ td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

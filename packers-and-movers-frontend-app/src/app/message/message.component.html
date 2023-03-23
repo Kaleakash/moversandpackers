@@ -1,0 +1,25 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div>
+     <table>
+      <tr>
+        <th>Name</th>
+        <th>EmailId</th>
+        <th>PhoneNumber</th>
+        <th>Subject</th>
+        <th>Message</th>
+        <th>TypeOfUser</th>
+      </tr>
+      <tr *ngFor="let mm of messages" style="height: 50px;">
+          <td>{{mm.name}}</td>
+          <td>{{mm.email}}</td>
+          <td>{{mm.phonenumber}}</td>
+          <td>{{mm.subject}}</td>
+          <td>{{mm.message}}</td>
+          <td>{{mm.typeofuser}}</td>
+      </tr>
+     </table>
+      </div>
+
+  
+  </div>

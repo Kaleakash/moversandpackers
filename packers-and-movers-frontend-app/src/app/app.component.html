@@ -1,0 +1,38 @@
+<div id="topContainer">
+  <!-- HEADER -->
+  <div id="header">
+    <div id="logo"><a href="#"><img src="assets/images/logo.gif" alt="" width="227" height="46" border="0" /></a></div>
+    
+  <div *ngIf=" menu===1 ">
+    <ul>
+      <li><a routerLink="">Home</a></li>
+      <li class="bullet"></li>
+      <li><a routerLink="login">Login</a></li>
+      <li class="bullet"></li>
+      <li><a routerLink="contacts">Contacts</a></li>
+      <li class="bullet"></li>
+      <li><a routerLink="services">Services</a></li>
+      <li class="bullet"></li>
+      <li><a routerLink="prices">Prices</a></li>
+      <li class="bullet"></li>
+      <li><a routerLink="quickquote">QuickQuote</a></li>
+    </ul>
+  </div>
+
+  <div *ngIf=" menu===2 ">
+    <ul style="margin-left:700px;">
+      <li><a routerLink="/logout">logout</a></li>
+    </ul>
+  </div>
+
+  <div *ngIf=" menu===3 ">
+    <ul style="margin-left: 700px;">
+      <li><a routerLink="/logout">logout</a></li>
+    </ul>
+  </div>
+  </div>
+  <hr/>
+  <div>
+      <router-outlet></router-outlet>
+  </div>
+</div>

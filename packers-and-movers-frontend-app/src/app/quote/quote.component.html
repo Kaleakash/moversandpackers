@@ -1,0 +1,32 @@
+  <!-- MAIN IMG -->
+<div>
+  <div>
+    <div>
+     <table>
+      <tr>
+        <th>FullName</th>
+        <th>EmailId</th>
+        <th>PhoneNumber</th>
+        <th>Moving From</th>
+        <th>Moving To</th>
+        <th>Moving Date</th>
+        <th>Message</th>
+        <th>TypeOfUser</th>
+      </tr>
+      <tr *ngFor="let qq of quote" style="height: 50px;">
+        
+          <td>{{qq.fullname}}</td>
+          <td>{{qq.email}}</td>
+          <td>{{qq.phoneNumber}}</td>
+          <td>{{qq.movingFrom}}</td>
+          <td>{{qq.movingTo}}</td>
+           <td>{{qq.movingDate|date}}</td>
+          <td>{{qq.message}}</td>
+          <td>{{qq.typeofuser}}</td>
+        </tr>
+
+     </table>
+      </div>
+
+  
+  </div>

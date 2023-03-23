@@ -1,0 +1,19 @@
+table{
+    margin-top: 20px;
+    width: 1080px;
+    font-size: 12pt;
+    overflow-y:scroll;
+    height:400px;
+    display:block;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    width:"90%"
+}
+
+tr,td,th{
+    border: red 1px solid;
+    padding: 10px;
+}
+
+

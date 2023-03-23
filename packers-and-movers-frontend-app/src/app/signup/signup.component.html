@@ -1,0 +1,29 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div id="mainPanel">
+        
+        <form [formGroup]="customerRef" (ngSubmit)="signUp()">
+          <h5>Account Create</h5>
+            <input type="text" placeholder="First Name" formControlName="fname">
+            <input type="text" placeholder="Last Name" formControlName="lname">
+            <input type="text" placeholder="Phone Number" formControlName="phonenumber">
+            <input type="email" placeholder="Email Id"formControlName="email"/>
+            <input type="password" placeholder="Password" formControlName="password">
+            <button type="submit">SignUp</button>
+            <button type="reset">Reset</button>
+            <div class="signUp">
+                <a routerLink="/login">SignIn</a>
+            </div>
+            <span id="error">{{msg}}</span>
+        </form>
+        
+    </div>
+  <div id="bottomContainer">
+    <!-- FOOTER -->
+    <div id="footer">
+      <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a> | <a href="#">PRICES</a> | <a href="#">NEWS</a> | <a href="#">SUPPORT</a> | <a href="#">CONTACTS</a><br/>
+        Copyright &copy; Your Company Name. Designed by<a href="http://www.templatesland.com"> TemplatesLand.com</a>.</p>
+    </div>
+  </div>
+  
+  </div>

@@ -1,0 +1,34 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div>
+     <table>
+      <tr>
+        <th>SrNo</th>
+        <th>Moving From</th>
+        <th>Moving To</th>
+        <th>Moving Date</th>
+        <th colspan="5">Item Details</th>
+      </tr>
+      <tr *ngFor="let oo of orders;let i=index;" style="height: 50px;">
+        <td>{{i+1}}</td>
+        <td>{{oo.email}}</td>
+        <td>{{oo.phoneNumber}}</td>
+        <td>{{oo.movingFrom}}</td>
+        <td>{{oo.movingTo}}</td>
+        <td>{{oo.movingDate}}</td>
+        <td>
+            <tr *ngFor="let qq of oo.quoteInfo">
+                <td>{{qq.basePrice}}</td>
+                <td>{{qq.itemName}}</td>
+                <td>{{qq.quantity}}</td>
+                <td>{{qq.serviceName}}</td>
+                <td>{{qq.totalPrice}}</td>
+            </tr>
+        </td>
+        </tr>
+
+     </table>
+      </div>
+
+  
+  </div>

@@ -1,0 +1,92 @@
+<div>
+        <div *ngIf="!finalQuote">
+        <form (ngSubmit)="submitRequest()" [formGroup]="customerReqRef"> 
+        <div  class="formData">
+            <div class="firstForm">
+                <h4>Quick Quote</h4>
+                <input type="text" placeholder="Moving From" formControlName="movingFrom">
+                <input type="text" placeholder="Moving To" formControlName="movingTo">
+                <input type="date" formControlName="movingDate">
+                <select #serTemp (change)="selectOption(serTemp)" class="box">
+                    <option>--Select Service--</option>
+                    <option *ngFor="let ser of service" value={{ser.title}}>{{ser.title}}</option>
+                </select>
+            </div>
+            <div class="secondForm">
+                <div *ngIf="temp">
+                    <table>
+                       <span style="font-size: 12pt;width: 200px;">{{filterService.title}}</span> 
+                        <tr  *ngFor="let item of filterService.items;let i=index;">
+                            <td style="font-size: 12pt;"> {{item.itemName}}</td>
+                            <td>
+                                <select class="box" #numberofItem (change)="calculate(item.itemName,numberofItem.value,i)">
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>    
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+            </div> 
+        </div>    
+ 
+
+    </form>
+
+</div>
+
+    <div *ngIf="finalQuote" class="finalBill">
+        <div>
+            <table class="box" style="width: 1000px;height: 200px;">
+                <tr>
+                    <th colspan="2">From</th>
+                    <td colspan="2">{{customerReqRef.get("movingFrom").value}}</td>
+                </tr>
+                <tr>
+                    <th colspan="2">To</th>
+                    <td colspan="2">{{customerReqRef.get("movingTo").value}}</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Date</th>
+                    <td colspan="2">{{customerReqRef.get("movingDate").value}}</td>
+                </tr>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Base Price</th>
+                    <th>Quantity</th>
+                    <th>Sub Totabl</th>
+                </tr>
+                <tr *ngFor="let q of quoteInfo">
+                    <td>{{q.itemName}}</td>
+                    <td>{{q.basePrice}}</td>
+                    <td>{{q.quantity}}</td>
+                    <td>{{q.totalPrice}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <th>Service Charge : </th>
+                    <td>{{100}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <th>Total Price:</th>
+                    <td>{{totalPrice+100}}</td>
+                </tr>
+            </table>
+            <button type="button" (click)="processed()">Processed</button>
+            <button type="reset" (click)="cancel()">Cancel</button>
+    
+</div>

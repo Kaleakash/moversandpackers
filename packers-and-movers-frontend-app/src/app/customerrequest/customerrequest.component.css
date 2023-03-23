@@ -1,0 +1,52 @@
+.formData{
+    display: flex;
+    margin: 5px;
+    color: black;
+}
+form{
+    all: unset;
+}
+.firstForm{
+
+    border: 4px black solid;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 30px;
+}
+.secondForm{
+
+    border: 4px black solid;
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 30px;
+}
+option{
+    color: black;
+    height: 100px;
+    padding: 5px;
+}
+.box {
+    width: 250px;
+    height: 22px;
+    border: 1px solid black;
+    font-size: 18px;
+    color: #1c87c9;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  .finalBill {
+    font-size: 18px;
+    margin: 30px;
+    padding: 20px;
+    color: whitesmoke;
+    border: 4px black solid;
+    border-radius: 30px;
+  }
+  tr,th,td{
+    margin: 100px;
+    padding: 2px;
+  }
+

@@ -1,0 +1,25 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div>
+     <table style="height: 440px;width: 1200px;">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Image</th>
+      </tr>
+      <tr *ngFor="let ss of allService" style="height: 50px;">
+          <td>{{ss.title}}</td>
+          <td width="60%">${{ss.description}}</td>
+          <td><img src={{ss.filePath}} class="imgClass"/></td>
+      </tr>
+     </table>
+      </div>
+  <div id="bottomContainer">
+    <!-- FOOTER -->
+    <div id="footer">
+      <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a> | <a href="#">PRICES</a> | <a href="#">NEWS</a> | <a href="#">SUPPORT</a> | <a href="#">CONTACTS</a><br/>
+        Copyright &copy; Your Company Name. Designed by<a href="http://www.templatesland.com"> TemplatesLand.com</a>.</p>
+    </div>
+  </div>
+  
+  </div>

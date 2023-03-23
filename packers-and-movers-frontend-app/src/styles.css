@@ -1,0 +1,240 @@
+/* You can add global styles to this file, and also import other style files */
+/* CSS Document */
+body{padding:0px; margin:0px; background:#232323; color:#FFF; font:10px/14px Tahoma, sans-serif; }
+div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
+ul{list-style-type:none;}
+
+.clear {clear: both; margin: 0px}
+
+p a{font:10px/14px Tahoma, sans-serif; color:#f6ed0c; font-weight:normal; text-decoration:none;}
+p a:hover{color:#f6ed0c; text-decoration:none; background:#0fbec1;}
+p.bluetxt{font:10px/12px Tahoma, sans-serif; color:#608d93; font-weight:bold; margin-bottom:15px;}
+p.yellowtxt{font:10px/12px Tahoma, sans-serif; color:#f6ed0c; font-weight:bold; text-align:right}
+p.yellowtxt span{font-weight:normal;}
+
+#topContainer{margin:0 auto; background:url(./assets/images/b_top.jpg) top left repeat-x #232323;width: 1300px;}
+#bottomContainer{margin:0 auto; background:url(./assets/images/b_bottom.jpg) top left repeat-x #2d2d2f;}
+
+/* HEADER */
+
+#header{height:61px; width:760px; margin: 0 auto; background:url(./assets/images/b_blue.jpg) top repeat-x; 
+    position:relative;}
+#logo{width:227px; height:46px; position:relative; top:15px; left:0; float:left}
+
+#header ul {margin: 0 auto; position:absolute; top:22px; left:277px;}
+#header ul li{float:left; margin-right: 11px;}
+
+/* #header ul li.login a{width:38px; height:20px; display:block; background:url(./assets/images/btn_home.gif) 0 0 no-repeat; text-indent:-20000px;}
+#header ul li.login a:hover{width:38px; height:20px; background:url(./assets/images/btn_home_over.gif) 0 0 no-repeat;}
+
+#header ul li.home a{width:38px; height:20px; display:block; background:url(./assets/images/btn_home.gif) 0 0 no-repeat; text-indent:-20000px;}
+#header ul li.home a:hover{width:38px; height:20px; background:url(./assets/images/btn_home_over.gif) 0 0 no-repeat;}
+
+#header ul li.about a{width:38px; height:20px; display:block; background:url(./assets/images/btn_about.gif) 0 0 no-repeat; text-indent:-20000px;}
+#header ul li.about a:hover{width:38px; height:20px; background:url(./assets/images/btn_about_over.gif) 0 0 no-repeat;}
+
+#header ul li.services a{width:56px; height:20px; display:block; background:url(./assets/images/btn_services.gif) 0 0 no-repeat; text-indent:-20000px;}
+#header ul li.services a:hover{width:56px; height:20px; background:url(./assets/images/btn_services_over.gif) 0 0 no-repeat;}
+
+#header ul li.prices a{width:43px; height:20px; display:block; background:url(./assets/images/btn_prices.gif) 0 0 no-repeat; text-indent:-20000px;}
+#header ul li.prices a:hover{width:43px; height:20px; background:url(./assets/images/btn_prices_over.gif) 0 0 no-repeat;}
+
+#header ul li.support a{width:49px; height:20px; display:block; background:url(./assets/images/btn_support.gif) 0 0 no-repeat; text-indent:-20000px;}
+#header ul li.support a:hover{width:49px; height:20px; background:url(./assets/images/btn_support_over.gif) 0 0 no-repeat;}
+
+#header ul li.contacts a{width:57px; height:20px; display:block; background:url(./assets/images/btn_contacts.gif) 0 0 no-repeat; text-indent:-20000px;}
+#header ul li.contacts a:hover{width:57px; height:20px; background:url(./assets/images/btn_contacts_over.gif) 0 0 no-repeat;} */
+
+#header ul li.bullet{width:4px; height:20px; background:url(./assets/images/bullet.gif) 0 11px no-repeat;margin-top: -5px;}
+
+
+#header ul li a{width:43px; height:20px; text-indent:-20000px;text-decoration: none;margin-top: 10px;font-size: 12pt;color: palegoldenrod;} 
+#header ul li a:hover{color:royalblue}    
+/* MAINIMG */
+#mainPanel{width: 1300px;height:560px;border: 0px solid red;}
+#mainimg{height:160px; width:723px; margin: 0 auto; background:url(./assets/images/main_img.jpg) 0 0 no-repeat; position:relative;}
+
+#presentation{width:238px; height:15px; position:absolute; top:27px; left:62px;}
+
+#call{width:213px; height:70px; position:absolute; top:94px; left:120px;}
+
+/* CONTENT */
+
+#content{width:715px; margin: 0 auto; background:url(./assets/images/b_content.gif) 0 0 repeat-y; }
+
+#leftPan{width:216px; float:left; margin-top:26px;}
+
+#news{width:197px; padding-left:19px}
+#news h2{width:99px; height:20px; background:url(./assets/images/h_news.gif) 0 0 no-repeat; padding-bottom:12px;}
+#news ul {width:193px; border-bottom:#353535 1px solid; padding-left:4px }
+#news ul li {width:172px; padding-left: 21px; background:url(./assets/images/bullet2.gif) 1px 4px no-repeat; padding-bottom:18px }
+#news ul li p span{color:#0fbec1}
+
+#testimonials{width:216px;}
+#testimonials h2{width:99px; height:20px; background:url(./assets/images/h_testimonials.gif) 0 0 no-repeat; padding: 0 0 11px 0; margin:21px 0 0 19px}
+#testimonials h3{width:112px; height:159px; background:url(./assets/images/img_testimonials.gif) 0 0 no-repeat; float:left; margin:0}
+#testimonials p.bluetxt{margin-top: 20px}
+#testimonials p.yellowtxt{margin: 10px 5px 0 0}
+
+#rightPan{width:428px; float:left; margin-left:45px;margin-top:26px;}
+
+#welcome{border-bottom:#353535 1px solid;}
+#welcome h2{width:191px; height:20px; background:url(./assets/images/h_welcome.gif) 0 0 no-repeat;}
+#welcome img{width:120px; height:88px; border: #252525 3px solid; float:left; margin: 15px 10px 0 6px}
+#welcome p.bluetxt{margin-top: 10px; margin-bottom:10px;}
+#welcome p {margin-bottom: 30px;}
+
+#services h2{width:96px; height:20px; background:url(./assets/images/h_services.gif) 0 0 no-repeat; padding: 0 0 15px 0; margin:21px 0 0 0}
+
+#services ul {width:210px; margin-left:3px; float:left; }
+#services ul li{height:20px; width:200px}
+#services ul li a{font:10px/20px Tahoma, sans-serif; color:#939393; font-weight:normal; text-decoration:none; background:url(./assets/images/arrow.gif) 0 6px no-repeat; padding: 0 0 0 16px; display:block;}
+#services ul li a:hover{text-decoration:underline; color:#fff;}
+
+/* FOOTER */
+
+#footer{height:80px; width:715px; margin: 0 auto; background:url(./assets/images/b_blue.jpg) bottom repeat-x; position:relative;}
+#footer p{padding: 25px 0 0 0; font:10px/16px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; text-align:center; color:#fff;}
+#footer p a{font:10px/16px Tahoma, Arial, Helvetica, sans-serif; font-weight:normal; color:#fff; text-decoration:none; padding: 0 2px }
+#footer p a:hover{color:#000; background:#FFFFFF;}
+
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 53%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 45%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signUp{
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+
+  }
+  .signUp a{
+
+    width: 300px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .signUp div:hover{
+    background-color: rgba(255,255,255,0.47);
+  }
+  a:hover{
+    color:royalblue;
+  }
+  input[type="radio"],span{
+    display: inline-block;
+    height: 20px;
+    width: 20%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;   
+  }
+  span{
+    display: inline-block;
+    height: 20px;
+    width: 25%;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 300;   
+    background-color: none;
+  }
+  
+ #error {color: red;width: 300px;}

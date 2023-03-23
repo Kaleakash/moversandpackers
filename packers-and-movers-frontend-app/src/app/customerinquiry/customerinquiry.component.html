@@ -1,0 +1,10 @@
+<div>
+    <form [formGroup]="inqRef" (ngSubmit)="sendMessage()">
+        <h4>New Inquiry</h4>
+        <input type="text" placeholder="Subject" formControlName="subject">
+        <input type="text" placeholder="What would you like to tell us" formControlName="message">
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+        <span id="error">{{msg}}</span>
+    </form>
+</div>

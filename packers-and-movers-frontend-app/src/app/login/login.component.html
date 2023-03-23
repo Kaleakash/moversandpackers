@@ -1,0 +1,33 @@
+  <!-- MAIN IMG -->
+  <div>
+    <div id="mainPanel">
+        
+        <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+            <h4>Login Here</h4>
+    
+            <label for="username">EmailId</label>
+            <input type="text" placeholder="Email" formControlName="email">
+    
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" formControlName="password">
+            <label for="typeofuser">TypeOfUser</label>
+            <input type="radio" formControlName="typeofuser" value="admin"/><span>Admin</span>
+            <input type="radio" formControlName="typeofuser" value="customer"/><span>Customer</span>
+            <button type="submit">SignIn</button>
+            <button type="reset">Reset</button>
+            <div class="signUp">
+                <a routerLink="/signUp">SignUp</a>
+            </div>
+            <span id="error">{{failureMsg}}</span>
+        </form>
+
+    </div>
+  <div id="bottomContainer">
+    <!-- FOOTER -->
+    <div id="footer">
+      <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a> | <a href="#">PRICES</a> | <a href="#">NEWS</a> | <a href="#">SUPPORT</a> | <a href="#">CONTACTS</a><br/>
+        Copyright &copy; Your Company Name. Designed by<a href="http://www.templatesland.com"> TemplatesLand.com</a>.</p>
+    </div>
+  </div>
+  
+  </div>

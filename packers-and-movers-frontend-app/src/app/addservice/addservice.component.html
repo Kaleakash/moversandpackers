@@ -1,0 +1,17 @@
+<div>
+    <form [formGroup]="serviceRef" (ngSubmit)="storeService()">
+        <h4>Add Service</h4>
+
+        <label for="username">Title</label>
+        <input type="text" placeholder="Title" formControlName="title">
+
+        <label for="password">description</label>
+        <input type="password" placeholder="Description" formControlName="description">
+        <label for="imageurl">Image URL</label>
+        <input type="url" placeholder="Image Url" formControlName="filePath"/>
+      
+        <button type="submit">Save Service</button>
+        <button type="reset">Reset</button>
+        <span id="error">{{msg}}</span>
+    </form>
+</div>
