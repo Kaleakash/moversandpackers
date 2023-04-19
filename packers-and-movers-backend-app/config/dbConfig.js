@@ -3,7 +3,7 @@ const loginModel = require("../model/adminModel");
 const serviceModel = require("../model/serviceModel");
 
 mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://database:27017/movers-and-packers-db',{useNewUrlParser: true});
+mongoose.connect('mongodb://database:27018/movers-and-packers-db',{useNewUrlParser: true});
 
 const db = mongoose.connection;
 
